@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+}
+
+.home-page {
+  background-image: url(./assets/cute-ducks-living-nature.jpg);
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.gastenboek {
+  background-image: url(./assets/cartoon\ bg.png);
+  background-size: 100%;
+  background-position-y: -8rem;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  height: 100vh;
+  z-index: 1;
+}
+.gastenboek .message-box {
+  width: 69.15vw;
+  height: 70.4vh;
+  margin-top: 17.12vh;
+  margin-left: 13.41vw;
+  padding: 1rem 2rem 2rem 2rem;
+  margin-bottom: 10vh;
+  overflow-y: scroll;
+}
+.gastenboek .message-box .info {
+  text-align: center;
+  padding-left: 2vw;
+  color: black;
+  z-index: 2;
+}
+.gastenboek .message-box .info1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-left: 2vw;
+  color: #FDCA40;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  z-index: 2;
+  margin-bottom: 0.8vh;
+}
+.gastenboek .message-box .vid {
+  position: fixed;
+  top: 17.12vh;
+  left: 13.4vw;
+  min-width: 75vw;
+  min-height: 60vh;
+  z-index: -1;
+}
+.gastenboek .message-box .message-title {
+  font-size: 4rem;
+  text-align: center;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+  letter-spacing: 0.2rem;
+  padding-bottom: 2rem;
+  z-index: 2;
+}
+.gastenboek .message-box::-webkit-scrollbar {
+  width: 0.5vw;
+}
+.gastenboek .message-box::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(10, 255, 255, 0.584);
+}
+.gastenboek .message-box::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 234, 0.744);
+  border-radius: 5rem;
+}
+.gastenboek .message-box::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 149, 136, 0.744);
+}
+
+nav {
+  height: 7vh;
+  width: 100vw;
+  background-color: #5C9EAD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-bottom: 5px solid #FDCA40;
+  box-shadow: 0px 0px 20px #FDCA40;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  animation-name: nav-animation;
+  animation-duration: 1s;
+}
+@keyframes nav-animation {
+  0% {
+    top: -15vh;
+  }
+  100% {
+    top: 0;
+  }
+}
+nav ul, nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  padding: 1.9vh 3vw 1.9vh 3vw;
+}
+nav a {
+  font-size: 1.2rem;
+  font-family: copperplate, fantasy;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1rem;
+}
+nav a:hover, nav .active {
+  background-color: #5cb6ca;
+}
+nav .logo {
+  height: 7vh;
+  padding-right: 2vw;
+}
+
+.title {
+  margin-top: 40vh;
+  font-size: 5rem;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+  letter-spacing: 0.2rem;
+  padding: 2rem;
+  text-shadow: 0px 0px 20px rgb(237, 237, 237);
+  position: absolute;
+  left: 33vw;
+  animation-name: title-animation;
+  animation-duration: 1s;
+}
+@keyframes title-animation {
+  0% {
+    left: -50vw;
+  }
+  100% {
+    left: 33vw;
+  }
+}
+
+.form-body {
+  background-image: url(./assets/insert-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-body .form-title {
+  color: #FDCA40;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  margin-top: 18vh;
+  font-size: 4rem;
+  text-shadow: 0px 0px 15px white;
+}
+.form-body .form {
+  background-color: rgba(92, 182, 202, 0.4);
+  border: 5px solid #5C9EAD;
+  border-radius: 2rem;
+  margin-top: 3vh;
+  width: 20vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-body .form label {
+  font-size: 1.5rem;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: rgb(255, 255, 255);
+}
+.form-body .form input {
+  height: 3.5vh;
+  width: 15vw;
+  border: 0;
+  background-color: white;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+  font-size: 1.1rem;
+}
+.form-body .form textarea {
+  background-color: white;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+  border: 0;
+  font-size: 1.1rem;
+}
+.form-body .form input::-moz-placeholder {
+  padding-left: 1vw;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+}
+.form-body .form input::placeholder {
+  padding-left: 1vw;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+}
+.form-body .form textarea::-moz-placeholder {
+  padding-left: 1vw;
+  padding-top: 1.2vh;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+}
+.form-body .form textarea::placeholder {
+  padding-left: 1vw;
+  padding-top: 1.2vh;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  color: #FDCA40;
+}
+.form-body .form button {
+  height: 4vh;
+  width: 15vw;
+  border: 0;
+  background-color: white;
+  color: #FDCA40;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+}
+.form-body .form button:hover, .form-body .form input:hover, .form-body .form input:focus, .form-body .form textarea:hover, .form-body .form textarea:focus {
+  box-shadow: 0px 0px 10px #d9ff00;
+  border: 0.5px solid white;
+  color: #FDCA40;
+}/*# sourceMappingURL=style.css.map */
